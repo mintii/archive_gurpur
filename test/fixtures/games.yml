@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  publisher: MyText
+  developer: MyText
+  platform: MyText
+  notes: MyText
+  cover_art: 
+
+two:
+  name: MyText
+  publisher: MyText
+  developer: MyText
+  platform: MyText
+  notes: MyText
+  cover_art: 
