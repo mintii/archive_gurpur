@@ -1,24 +1,27 @@
-# README
+# Gurpur
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Local Development
+1. Set your local Ruby environment to 2.7.5
+2. `bundle install`
 
-Things you may want to cover:
+      a. It may fail on installing the `pg` gem. So check if your Homebrew has it `postgresql` installed.
+      
+      `brew list | grep postgresql`
+      
+      `brew install postgresql`
+  
+    Next, we need to initialize your database:
+    
+    `initdb `brew --prefix`/var/postgres/data -E utf8`
+    
+    If successful, run this next: 
+    
+    `pg_ctl -D /usr/local/var/postgres/data -l logfile start`
+    
+    Now you should be able to bundle install successfully. 🎉
+3. `bin/rails db:create`
+4. `bin/rails db:migrate`
+5. `bin/rails db:seed`
+6. `bin/rails s` 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Visit localhost:3000 in your browser. 
